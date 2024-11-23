@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #343a40;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .header-left h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .category-menu {
+    margin: 0;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 160px;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category-menu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-menu label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+  }
+  
+  .category-menu select {
+    width: 100%;
+    padding: 6px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .category-menu select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .category-menu option {
+    font-size: 12px;
+    padding: 6px;
+  }
+  
+  @media (max-width: 1024px) {
+    .header {
+      padding: 15px 30px;
+    }
+  
+    .header-left h1 {
+      font-size: 1.8rem;
+    }
+  
+    .category-menu {
+      width: 140px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 10px 20px;
+    }
+  
+    .header-left {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .header-left h1 {
+      font-size: 1.5rem;
+    }
+  
+    .category-menu {
+      width: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 8px 15px;
+    }
+  
+    .header-left h1 {
+      font-size: 1.2rem;
+    }
+  
+    .category-menu {
+      width: 100px;
+    }
+  
+    .category-menu select {
+      font-size: 10px;
+    }
+  }
+  
