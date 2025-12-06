@@ -24,7 +24,7 @@ const CategoryMenu = () => {
         onChange={(e) => setCategory(e.target.value)}
       >
         {categories.map((cat) => (
-          <option key={cat} value={cat}>
+          <option key={cat} value={cat.toLowerCase()}>
             {cat.charAt(0).toUpperCase() + cat.slice(1)}
           </option>
         ))}
