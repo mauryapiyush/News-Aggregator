@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Base URL for your backend (change when deploying)
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "https://news-aggregator-e99n.onrender.com";
 
 const fetchTopHeadlines = async (category = "general") => {
   try {
